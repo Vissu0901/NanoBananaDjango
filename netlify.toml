@@ -1,16 +1,10 @@
 [build]
-  base = ""
-  command = """
-    pip install -r backend/requirements.txt &&
-    cd backend &&
-    python manage.py collectstatic --noinput
-  """
-  publish = "backend/staticfiles"
-  functions = "backend/netlify/functions"
+  command = "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+  publish = "staticfiles"
+  functions = "netlify/functions"
 
 [build.environment]
-  PYTHON_VERSION = "3.11"
-  DJANGO_SETTINGS_MODULE = "backend.settings"
+  PYTHON_VERSION = "3.9"
 
 [[redirects]]
   from = "/*"
@@ -19,5 +13,5 @@
   force = true
 
 [functions]
-  directory = "backend/netlify/functions"
+  directory = "netlify/functions"
   node_bundler = "esbuild"
