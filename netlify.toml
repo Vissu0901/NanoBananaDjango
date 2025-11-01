@@ -9,7 +9,7 @@
   functions = "backend/netlify/functions"
 
 [build.environment]
-  PYTHON_VERSION = "3.13"
+  PYTHON_VERSION = "3.11"
   DJANGO_SETTINGS_MODULE = "backend.settings"
 
 [[redirects]]
