@@ -1,0 +1,4 @@
+django
+djangorestframework
+serverless-wsgi
+whitenoise
