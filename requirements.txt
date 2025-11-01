@@ -1,4 +1,6 @@
-django
-djangorestframework
-serverless-wsgi
-whitenoise
+django==4.2.7
+djangorestframework==3.14.0
+serverless-wsgi==3.0.2
+whitenoise==6.6.0
+gunicorn==21.2.0
+
